@@ -61,6 +61,11 @@ footer {
     background-color: $orange-color;
     color: white;
   }
+  
+  img {
+    max-width: 150px;
+    height: auto;
+  }
 }
 
 .first-part {

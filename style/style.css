@@ -74,6 +74,11 @@ footer {
   color: white;
 }
 
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
 .first-part {
   height: 50%;
 }
