@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
   <title>Random Fun Generator</title>
@@ -26,30 +27,38 @@
           Game Generation For You And Your Friends
         </h3>
         <p class="game__type-title">You can choose any game type you prefer:</p>
-        <div class="game__types">
-          <button class="game__type game__type-smart">Games With Smartphone</button>
-          <button class="game__type game__type-cards">Games With Cards</button>
-          <button class="game__type game__type-paper">Games With Pen and Paper</button>
-          <button class="game__type game__type-no-inv">Games With No Inventory</button>
-        </div>
         <div class="buttons">
           <button class="btn game__generate-btn">
             Generate Game
           </button>
+          <div class="custom-select">
+            <select class='select' name="game__type-select" id="game__type-select">
+            <option selected for="game__type-select" value="all">All</option>
+            <option value="smartphoneGames">Games with Phone</option>
+            <option value="cardsGames">Games With Cards</option>
+            <option value="drawGames">Draw Games</option>
+            <option value="noInventoryGames">No Inventory Games</option>
+          </select>
+          <span class="arrow"><i class="fas fa-arrow-down"></i></span>
+          </div>
 
-          <a href='games.html' class="btn game__reset-btn">
+          <!-- <a href='games.html' class="btn game__reset-btn">
             Reset Game Types
-          </a>
+          </a> -->
         </div>
         <h4 class='game__title'>Your Game For Today Is:</h4>
-        <p class="game__name">
+        <div class="game">
+          <div class="article">
+            <p class="game__name">
           
-        </p>
-        <h4 class="game__rules-title">
-          Rules: 
-        </h4>
-        <p class="game__rules">
-        </p>
+            </p>
+            <h4 class="game__rules-title">
+              Rules: 
+            </h4>
+            <p class="game__rules">
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </main>

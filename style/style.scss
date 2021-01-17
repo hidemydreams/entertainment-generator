@@ -161,28 +161,64 @@ footer {
 
 // game-types 
 
-.game__types {
-  display: flex;
-  justify-content: space-evenly;
+.custom-select {
+  position: relative;
+  display: inline-block;
 }
 
-.game__type {
-  border: none;
-  outline: none;
-  background-color: lighten($orange-color, 10%);
-  padding: 5px;
-  transition: all .2s;
-  color: white;
-  cursor: pointer;
+.arrow {
+  position: absolute;
+  right: 5px;
+  top: 18px;
 
-  &:hover {
-    background-color: darken($orange-color, 20%);
+  i {
+    color: white;
+    font-size: 1rem;
   }
 }
 
-.active.game__type {
-  background-color: darken($orange-color, 20%);
+.select {
+  color: white;
+  font-size: 1rem;
+  background-color: $orange-color;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  padding-left: 0.3rem;
+  appearance: none;
+
+  &:hover {
+    background-color: darken($orange-color, 10%);
+  }
+
+  option {
+    background-color: orange;
+    color: white;
+  }
 }
+
+// .game__types {
+//   display: flex;
+//   justify-content: space-evenly;
+// }
+
+// .game__type {
+//   border: none;
+//   outline: none;
+//   background-color: lighten($orange-color, 10%);
+//   padding: 5px;
+//   transition: all .2s;
+//   color: white;
+//   cursor: pointer;
+
+//   &:hover {
+//     background-color: darken($orange-color, 20%);
+//   }
+// }
+
+// .active.game__type {
+//   background-color: darken($orange-color, 20%);
+// }
 
 .game__name, .game__rules {
   font-size: 1.3rem;

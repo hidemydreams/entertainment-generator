@@ -184,32 +184,42 @@ footer {
   background-color: #ff9c06;
 }
 
-.game__types {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.custom-select {
+  position: relative;
+  display: inline-block;
 }
 
-.game__type {
+.arrow {
+  position: absolute;
+  right: 5px;
+  top: 18px;
+}
+
+.arrow i {
+  color: white;
+  font-size: 1rem;
+}
+
+.select {
+  color: white;
+  font-size: 1rem;
+  background-color: #FFB039;
   border: none;
   outline: none;
-  background-color: #ffc46c;
-  padding: 5px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  padding: 1.2rem;
+  padding-left: 0.3rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select:hover {
+  background-color: #ff9c06;
+}
+
+.select option {
+  background-color: orange;
   color: white;
-  cursor: pointer;
-}
-
-.game__type:hover {
-  background-color: #d27e00;
-}
-
-.active.game__type {
-  background-color: #d27e00;
 }
 
 .game__name, .game__rules {
