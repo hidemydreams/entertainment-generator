@@ -209,7 +209,7 @@ selectGame.addEventListener('change', (e) => {
     if (game.category === target) {
       return game
     }
-    if (game.category === 'all') {
+    if (target === 'all') {
       return gamesList
     }
   })
@@ -217,7 +217,6 @@ selectGame.addEventListener('change', (e) => {
   // Generate Btn----------------------------
   generateBtn.addEventListener('click', () => {
     let randomGame = randomInt(choosenType.length);
-    console.log(randomGame)
     gameName.textContent = choosenType[randomGame].name
     gameRules.textContent = choosenType[randomGame].rules
   })
@@ -227,7 +226,6 @@ function allItems() {
   // Generate Btn----------------------------
   generateBtn.addEventListener('click', () => {
     let randomGame = randomInt(gamesList.length);
-    console.log(randomGame)
     gameName.textContent = gamesList[randomGame].name
     gameRules.textContent = gamesList[randomGame].rules
   })
@@ -253,3 +251,5 @@ function randomInt(length) {
   let randomInt = Math.floor(Math.random() * length);
   return randomInt
 }
+
+console.log(randomInt(10))
