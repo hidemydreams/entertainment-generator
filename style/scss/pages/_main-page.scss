@@ -1,0 +1,40 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 500px;
+    height: auto;
+  }
+
+  &__text {
+    margin: 0 25px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: $text-color;
+    max-width: 500px;
+
+    span {
+      background-color: $accent-color;
+    }
+  }
+
+  &__desc {
+    font-size: 20px;
+    max-width: 500px;
+    color: $text-color;
+    font-weight: 500;
+  }
+}

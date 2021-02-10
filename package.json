@@ -1,0 +1,29 @@
+{
+  "name": "onefun",
+  "description": "![Project Logo](img/logo.svg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch style/scss/main.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hidemydreams/entertainment-generator.git"
+  },
+  "keywords": [
+    "generator",
+    "entertainment",
+    "books",
+    "movies"
+  ],
+  "author": "Naza Archakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hidemydreams/entertainment-generator/issues"
+  },
+  "homepage": "https://github.com/hidemydreams/entertainment-generator#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}

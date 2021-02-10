@@ -3,23 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts  -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/normalize.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- CSS Styles  -->
   <link rel="stylesheet" href="style/style.css">
-  <title>Random Fun Generator</title>
+  <title>OneFun</title>
 </head>
 <body>
-  <section class="hero">
-    <div class="first-part">
-      <a href="index.html" class="logo">
-        <img src="img/logo.svg" alt="">
-      </a>
-      <h1 class="main-title">Entertainment<br><span>Generator</span></h1>
-    </div>
-    <div class="second-part">
-      <a href="cards.html" class="generate-btn">Generate Some Fun Stuff</a>
-    </div>
-  </section>
+  <!-- Wrapper To Get Footer Down  -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        <div class="nav__wrapper">
+          <ul class="nav__icons-list">
+            <li><img src="src/img/search-icon.svg" alt="Search Button"></li>
+            <li ><img class="nav__close-btn" src="src/img/exit-icon.svg" alt="Close Menu Button"></li>
+          </ul>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li><a href="">Home</a></li>
+              <li><a href="">Books</a></li>
+              <li><a href="">Games</a></li>
+              <li><a href="">Movies</a></li>
+              <li><a href="">Texts</a></li>
+              <li><a href="">Numbers</a></li>
+            </ul>
+          </div>
+        </div> 
+    </nav>
+  </header>
+  
+  
+    <section class="hero">
+      
+      <div class="hero__content">
+        <img class="hero__image" src="src/img/hero-image.svg" alt="Hero">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span>Simple</span> service to help you when you are <span>bored!</span>
+          </h1>
+          <p class="hero__desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia corporis doloremque nulla tenetur provident fuga dolor. Explicabo sed ex doloremque ipsa, optio neque maiores, maxime a recusandae natus ullam eos?
+          </p>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+  <script src="src/script/script.js"></script>
 </body>
 </html>
